@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> KINGDOM OF KOHLI LIVE LINKS </title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Arial, sans-serif;
+
+    color: #f5f7ff;
+
+    background:
+        radial-gradient(
+            circle at 8% 42%,
+            rgba(28, 126, 173, .16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 65%,
+            rgba(128, 52, 180, .18),
+            transparent 32%
+        ),
+        #050817;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    height: 88px;
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 27, 49, .97),
+            rgba(7, 18, 40, .95)
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,.035);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #294f71,
+            #0c2742 65%
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+.logo span {
+    color: #39dcff;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.brand-text {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+}
+
+.brand-text span {
+    color: #37ddff;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.header-button {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    background: rgba(255,255,255,.045);
+
+    color: #e9edff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.header-telegram {
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #31caff,
+            #665cff
+        );
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.page {
+    width: 100%;
+    max-width: 1010px;
+
+    margin: 0 auto;
+
+    padding: 20px 12px 40px;
+}
+
+
+/* =========================================================
+   VIDEO PLAYER BORDER
+========================================================= */
+
+.player-border {
+    padding: 4px;
+
+    border-radius: 27px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #096088 0%,
+            #404ca5 48%,
+            #7540c8 100%
+        );
+}
+
+
+/* =========================================================
+   VIDEO PLAYER
+========================================================= */
+
+.player {
+    position: relative;
+
+    width: 100%;
+    height: 550px;
+
+    overflow: hidden;
+
+    border-radius: 23px;
+
+    background:
+        radial-gradient(
+            circle at 50% 48%,
+            rgba(34,39,76,.38),
+            rgba(0,0,0,.91) 68%
+        ),
+        #020309;
+}
+
+#main-iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+
+    background: #000;
+}
+
+
+/* =========================================================
+   PLAYER BADGES
+========================================================= */
+
+.player-badge {
+    position: absolute;
+
+    top: 14px;
+
+    z-index: 10;
+
+    height: 31px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background: rgba(2,3,10,.65);
+
+    border: 1px solid rgba(255,255,255,.11);
+
+    backdrop-filter: blur(8px);
+
+    color: #dce3f7;
+
+    font-size: 9px;
+
+    letter-spacing: .5px;
+
+    pointer-events: none;
+}
+
+.player-badge.left {
+    left: 14px;
+}
+
+.player-badge.right {
+    right: 14px;
+}
+
+.player-badge.left::before {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #38dcff;
+
+    box-shadow: 0 0 9px #38dcff;
+}
+
+.player-badge.right::before {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #ff4f91;
+
+    box-shadow: 0 0 9px #ff4f91;
+}
+
+
+/* =========================================================
+   ERROR SCREEN
+========================================================= */
+
+#error-screen {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 8;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(29,35,73,.35),
+            rgba(0,0,0,.84) 68%
+        );
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-icon {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ff718f;
+
+    font-size: 26px;
+
+    background: rgba(255,70,105,.07);
+
+    border: 1px solid rgba(255,95,125,.18);
+}
+
+.error-content h2 {
+    font-size: 21px;
+    margin-bottom: 9px;
+}
+
+.error-content p {
+    color: #747b93;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CURRENTLY VIEWING
+========================================================= */
+
+.current-section {
+    padding: 13px 4px 8px;
+}
+
+.current-label {
+    color: #656d87;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+#stream-name-label {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+.current-subtitle {
+    color: #737b94;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.actions {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+    margin-top: 8px;
+}
+
+.action-button {
+    height: 47px;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 650;
+
+    cursor: pointer;
+}
+
+.telegram-action {
+    background:
+        linear-gradient(
+            90deg,
+            #36d9ef,
+            #9860ff
+        );
+}
+
+.reload-action {
+    background: rgba(255,255,255,.045);
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+========================================================= */
+
+.features {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+
+    margin-top: 11px;
+}
+
+.feature-card {
+    position: relative;
+
+    min-height: 120px;
+
+    padding: 17px 14px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,.075);
+
+    background: rgba(255,255,255,.035);
+}
+
+.feature-card::after {
+    content: "";
+
+    position: absolute;
+
+    right: -30px;
+    bottom: -45px;
+
+    width: 140px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    filter: blur(20px);
+
+    opacity: .65;
+
+    background: #23bde0;
+}
+
+.feature-card:nth-child(2)::after {
+    background: #824cff;
+}
+
+.feature-card:nth-child(3)::after {
+    background: #d845a0;
+}
+
+.feature-number {
+    position: relative;
+    z-index: 2;
+
+    color: #646c85;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    position: relative;
+    z-index: 2;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+.feature-card p {
+    position: relative;
+    z-index: 2;
+
+    max-width: 240px;
+
+    color: #737a92;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   TELEGRAM BANNER
+========================================================= */
+
+.telegram-banner {
+    min-height: 78px;
+
+    margin-top: 11px;
+
+    padding: 13px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 17px;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(21,46,73,.75),
+            rgba(39,25,69,.60)
+        );
+}
+
+.telegram-info {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.telegram-box {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(45,172,237,.12);
+
+    font-size: 18px;
+}
+
+.telegram-title {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.telegram-description {
+    color: #737b93;
+
+    font-size: 9px;
+}
+
+.join-button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    color: #fff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3aaff9,
+            #805bff
+        );
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 2px 0;
+
+    color: #596177;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   TELEGRAM POPUP OVERLAY
+========================================================= */
+
+#overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,.67);
+
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease;
+}
+
+#overlay.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.popup {
+    position: relative;
+
+    width: min(570px, 100%);
+
+    padding: 39px 28px 28px;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    border: 1px solid rgba(255,255,255,.11);
+
+    background:
+        radial-gradient(
+            circle at 90% 0%,
+            rgba(121,76,225,.19),
+            transparent 45%
+        ),
+        #10182f;
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.58);
+
+    transform:
+        translateY(10px)
+        scale(.98);
+
+    transition:
+        transform .25s ease;
+}
+
+#overlay.show .popup {
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.popup-close {
+    position: absolute;
+
+    top: 17px;
+    right: 17px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.045);
+
+    color: #9ca4ba;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   YOUR TELEGRAM IMAGE
+========================================================= */
+
+.popup-logo {
+    width: 96px;
+    height: 96px;
+
+    margin: 0 auto 23px;
+
+    padding: 4px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #36dcff,
+            #a15aff
+        );
+}
+
+
+/*
+    PUT YOUR IMAGE URL BELOW
+    in the HTML img src.
+*/
+
+.popup-logo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 21px;
+}
+
+
+/* =========================================================
+   POPUP TEXT
+========================================================= */
+
+.popup-label {
+    color: #3ddcff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 14px;
+}
+
+.popup h2 {
+    font-size: 27px;
+
+    margin-bottom: 21px;
+}
+
+.popup h2 span {
+    color: #45cfff;
+}
+
+.popup-name {
+    color: #a0a7bc;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.popup-description {
+    color: #747d97;
+
+    font-size: 11px;
+
+    margin-bottom: 27px;
+}
+
+.popup-button {
+    width: 100%;
+
+    height: 57px;
+
+    border: none;
+
+    border-radius: 17px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3aaeff,
+            #805bff
+        );
+}
+
+.popup-bottom {
+    margin-top: 15px;
+
+    color: #5e667e;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        height: 70px;
+
+        padding: 0 14px;
+    }
+
+    .brand-text {
+        font-size: 15px;
+    }
+
+    .header-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page {
+        padding: 14px 9px 30px;
+    }
+
+    .player {
+        height: 420px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        min-height: 110px;
+    }
+
+    .actions {
+        grid-template-columns: 1fr;
+    }
+
+    .telegram-banner {
+        gap: 12px;
+    }
+
+    .join-button {
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .player {
+        height: 330px;
+    }
+
+    .player-badge {
+        top: 10px;
+
+        height: 27px;
+
+        padding: 0 9px;
+
+        font-size: 8px;
+    }
+
+    #stream-name-label {
+        font-size: 18px;
+    }
+
+    .telegram-banner {
+        padding: 12px;
+    }
+
+    .telegram-description {
+        font-size: 8px;
+    }
+
+    .join-button {
+        padding: 9px 13px;
+
+        font-size: 8px;
+    }
+
+    .popup {
+        padding: 32px 19px 23px;
+    }
+
+    .popup h2 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="logo">
+            <span>EL</span>
+        </div>
+
+        <div class="brand-text">
+            KINGDOM <span>OF KOHLI</span>
+        </div>
+
+    </div>
+
+
+    <div class="header-buttons">
+
+        <button
+            class="header-button"
+            type="button">
+            ☼
+        </button>
+
+        <button
+            class="header-button header-telegram"
+            type="button"
+            onclick="showPopup()">
+            ➤
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =======================================================
+     PAGE
+======================================================= -->
+
+<main class="page">
+
+
+    <!-- VIDEO -->
+
+    <section class="player-border">
+
+        <div class="player">
+
+            <div class="player-badge left">
+           KINGDOM OF KOHLI
+            </div>
+
+            <div class="player-badge right">
+                LIVE
+            </div>
+
+
+            <!-- STREAM IFRAME -->
+
+            <iframe
+                id="main-iframe"
+                allowfullscreen
+                scrolling="no"
+                frameborder="0">
+            </iframe>
+
+
+            <!-- ERROR -->
+
+            <div id="error-screen">
+
+                <div class="error-content">
+
+                    <div class="error-icon">
+                        !
+                    </div>
+
+                    <h2>
+                        Stream Unavailable
+                    </h2>
+
+                    <p>
+                        No stream ID provided in URL.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CURRENT STREAM -->
+
+    <section class="current-section">
+
+        <div class="current-label">
+            CURRENTLY VIEWING
+        </div>
+
+        <h2 id="stream-name-label">
+            STREAM UNAVAILABLE
+        </h2>
+
+        <div class="current-subtitle">
+            KINGDOM OF KOHLI • Live streaming
+        </div>
+
+
+        <div class="actions">
+
+            <button
+                class="action-button telegram-action"
+                onclick="showPopup()">
+
+                ➤ &nbsp; Telegram
+
+            </button>
+
+
+            <button
+                class="action-button reload-action"
+                onclick="location.reload()">
+
+                ↻ &nbsp; Reload
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- THREE CARDS -->
+
+    <section class="features">
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                01 / VIEW
+            </div>
+
+            <h3>
+                Clean Player
+            </h3>
+
+            <p>
+                A focused viewing experience built around your stream.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                02 / SPEED
+            </div>
+
+            <h3>
+                Quick Access
+            </h3>
+
+            <p>
+                Open the page and get straight to your stream.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                03 / UPDATE
+            </div>
+
+            <h3>
+                Instant Updates
+            </h3>
+
+            <p>
+                Follow the channel for the latest links and updates.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- TELEGRAM BAR -->
+
+    <section class="telegram-banner">
+
+        <div class="telegram-info">
+
+            <div class="telegram-box">
+                ➤
+            </div>
+
+            <div>
+
+                <div class="telegram-title">
+                    KINGDOM OF KOHLI
+                </div>
+
+                <div class="telegram-description">
+                    For Instant And Efficient Links
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="join-button"
+            onclick="showPopup()">
+
+            JOIN CHANNEL →
+
+        </button>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <span>
+          KINGDOM OF KOHLI Streaming Interface
+        </span>
+
+        <span>
+            2026 • Online
+        </span>
+
+    </footer>
+
+</main>
+
+
+
+<!-- =======================================================
+     TELEGRAM POPUP
+======================================================= -->
+
+<div id="overlay">
+
+    <div class="popup">
+
+
+        <button
+            class="popup-close"
+            onclick="closePopup()">
+
+            ×
+
+        </button>
+
+
+        <!--
+        =====================================================
+        YOUR IMAGE
+
+        CHANGE ONLY THE src BELOW.
+
+        Example:
+
+        src="https://example.com/my-image.jpg"
+
+        =====================================================
+        -->
+
+        <div class="popup-logo">
+
+            <img
+                src="https://ibb.co/t6pQ7NR"
+                alt="KINGDOM OF KOHLI >
+
+        </div>
+
+
+        <div class="popup-label">
+            OFFICIAL TELEGRAM
+        </div>
+
+
+        <h2>
+            Join <span>Channel</span>
+        </h2>
+
+
+        <div class="popup-name">
+            KINGDOM OF KOHLI
+        </div>
+
+
+        <div class="popup-description">
+            For Instant And Efficient Links
+        </div>
+
+
+        <button
+            class="popup-button"
+            onclick="goTelegram()">
+
+            ➤ &nbsp; JOIN KINGDOM OF KOHLI
+
+        </button>
+
+
+        <div class="popup-bottom">
+            Tap outside to close
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   STREAM CONFIGURATION
+========================================================= */
+
+const JSON_URL =
+    "https://allrounder2-0.pages.dev/id.json";
+
+
+/* =========================================================
+   START
+========================================================= */
+
+/*
+   Show Telegram popup after 800 milliseconds.
+*/
+
+setTimeout(
+    showPopup,
+    800
+);
+
+
+/*
+   Load stream immediately.
+*/
+
+loadStream();
+
+
+
+/* =========================================================
+   LOAD STREAM
+========================================================= */
+
+async function loadStream() {
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    const id =
+        params.get("id");
+
+
+    /*
+       No ID in URL
+    */
+
+    if (!id) {
+
+        showError(
+            "No stream ID provided in URL."
+        );
+
+        return;
+    }
+
+
+    try {
+
+        /*
+           Get stream JSON
+        */
+
+        const res =
+            await fetch(
+                JSON_URL +
+                "?t=" +
+                Date.now()
+            );
+
+
+        if (!res.ok) {
+
+            throw new Error(
+                "Fetch failed"
+            );
+
+        }
+
+
+        const data =
+            await res.json();
+
+
+        /*
+           Find stream matching ?id=
+        */
+
+        const stream =
+            data.iframes &&
+            data.iframes.find(
+                x => x.id === id
+            );
+
+
+        /*
+           Stream not found
+        */
+
+        if (
+            !stream ||
+            !stream.iframeSrc
+        ) {
+
+            showError(
+                "Stream not found for this ID."
+            );
+
+            return;
+        }
+
+
+        /*
+           Update page title
+        */
+
+        document.title =
+            (
+                stream.name ||
+                "Live Stream"
+            ) +
+            " — KINGDOM OF KOHLI";
+
+
+        /*
+           Update stream name
+        */
+
+        document.getElementById(
+            "stream-name-label"
+        ).innerText =
+            stream.name ||
+            "Live Stream";
+
+
+        /*
+           Hit counter
+        */
+
+        if (stream.hit) {
+
+            fetch(
+                stream.hit
+            ).catch(
+                () => {}
+            );
+
+        }
+
+
+        /*
+           Load actual iframe stream
+        */
+
+        const iframe =
+            document.getElementById(
+                "main-iframe"
+            );
+
+
+        iframe.src =
+            stream.iframeSrc;
+
+
+    } catch (error) {
+
+        console.error(
+            error
+        );
+
+
+        showError(
+            "Failed to load stream data. Please retry."
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   SHOW ERROR
+========================================================= */
+
+function showError(message) {
+
+    const iframe =
+        document.getElementById(
+            "main-iframe"
+        );
+
+
+    iframe.style.display =
+        "none";
+
+
+    const errorScreen =
+        document.getElementById(
+            "error-screen"
+        );
+
+
+    errorScreen.style.display =
+        "flex";
+
+
+    errorScreen
+        .querySelector("p")
+        .innerText =
+        message;
+
+}
+
+
+
+/* =========================================================
+   TELEGRAM POPUP
+========================================================= */
+
+function showPopup() {
+
+    document
+        .getElementById("overlay")
+        .classList
+        .add("show");
+
+}
+
+
+function closePopup() {
+
+    document
+        .getElementById("overlay")
+        .classList
+        .remove("show");
+
+}
+
+
+
+/* =========================================================
+   CLICK OUTSIDE POPUP TO CLOSE
+========================================================= */
+
+document
+    .getElementById("overlay")
+    .addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target ===
+                this
+            ) {
+
+                closePopup();
+
+            }
+
+        }
+    );
+
+
+
+/* =========================================================
+   TELEGRAM BUTTON
+========================================================= */
+
+function goTelegram() {
+
+    window.open(
+        "https://t.me/kingdomofkohli",
+        "_blank"
+    );
+
+    closePopup();
+
+}
+
+</script>
+
+</body>
+</html>
